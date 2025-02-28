@@ -1,0 +1,1 @@
+ C:\\Users\\jeong\\FlutterProjects\\qr_attendance_check\\qr_attendance_check_simulator\\.dart_tool\\flutter_build\\c548e2258d569181c781078e6d8d4d32\\native_assets.yaml: 
