@@ -1,5 +1,4 @@
-<img src="" alt="https://github.com/user-attachments/assets/c7700eac-11a9-4f02-976e-4f0bb3df254c" width="400"/>
-
+<img src="https://github.com/user-attachments/assets/c7700eac-11a9-4f02-976e-4f0bb3df254c" alt="앱 아이콘" width="400"/>
 
 # 🎓 내일배움캠프 QR 출결 시뮬레이터
 
