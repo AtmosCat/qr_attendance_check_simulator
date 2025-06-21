@@ -1,16 +1,86 @@
-# qr_attendance_check_simulator
+<img src="<!-- 아이콘 이미지 링크 -->" alt="icon" width="400"/>
 
-A new Flutter project.
+# 🎓 내일배움캠프 QR 출결 시뮬레이터
 
-## Getting Started
+> 혼란스러웠던 정부 QR 출결 기준을 정확하게 시뮬레이션하여, 수강생들이 스스로 출결 결과를 예측하고 대비할 수 있도록 도운 도구형 앱
+> Flutter 기반 웹앱
 
-This project is a starting point for a Flutter application.
+---
 
-A few resources to get you started if this is your first Flutter project:
+## ✨ 소개
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+**내일배움캠프 QR 출결 시뮬레이터**는  
+정부가 운영하는 국비지원 교육 프로그램에서 변경된 **QR 출결 방식과 인정 기준에 맞춰**,  
+수강생이 직접 자신의 **입실/퇴실/외출/복귀 시간**을 입력하면  
+**출결 인정 여부를 자동 계산**해주는 시뮬레이션 도구입니다.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+---
+
+## 🎯 개발 배경
+
+2024년 11월부터 2025년 5월까지, 저는 **스파르타코딩클럽의 내일배움캠프 Kotlin&Spring 5기에서 APM(Assistant Program Manager)**으로 근무하였습니다.  
+해당 캠프는 정부의 국비지원을 받아 진행되었기 때문에, **출결 관리가 매우 중요한 항목**으로 간주되었고, 수료 여부나 지원금 지급에도 직접적인 영향을 주었습니다.
+
+초기에는 스파르타 자체 사이트에서 출결을 관리하고 있었으나, **정부 방침이 캠프 도중에 급격히 변경**되면서  
+수강생 전원이 정부에서 제공하는 **QR 기반 출결 앱으로 전환**해야 하는 상황이 발생했습니다.  
+이 앱은 사용 방식이 복잡했을 뿐만 아니라,  
+- **입실/퇴실/외출/복귀** 각각의 시각을 개별적으로 기록해야 했고,  
+- **누적 학습 시간**과 **인정 기준**이 정부 규정에 따라 다르게 계산되며,  
+- **중간에 외출 후 복귀했는지 여부**에 따라도 출결 결과가 달라지는 등  
+**수강생이 스스로 출결 결과를 예측하기가 매우 어려운 구조**였습니다.
+
+이로 인해 수강생들은 ‘내 출결이 정상 인정되는 게 맞는지’, ‘중간에 외출했는데 인정이 될지’ 등을 두고 **매우 큰 혼란과 불안을 호소**했습니다.  
+이러한 문제를 해결하고자, 저는 APM으로서 **직접 출결 계산 로직을 분석**하고,  
+**정부 기준에 따른 출결 판별 규칙을 앱 형태로 구현**하여 수강생에게 배포했습니다.
+
+수강생은 이 앱에서  
+- 입실 시간  
+- 퇴실 시간  
+- (외출 발생 시) 외출 시작 시간  
+- (외출 발생 시) 복귀 시간  
+을 입력하면, 앱이 내부적으로 계산하여  
+- **출석**인지  
+- **지각/조퇴/외출**인지  
+- **결석 처리**되는지  
+를 알려주는 시뮬레이션 결과를 받을 수 있었습니다.
+
+이 앱은 단순한 유틸리티 도구였지만,  
+**수강생의 불안감을 해소하고, APM으로서의 역할을 능동적으로 수행했다는 점에서 의미 있는 프로젝트**였습니다.
+
+---
+
+## 🖼 스크린샷
+
+<table>
+<table>
+  <tr>
+    <td><strong>웹사이트</strong></td>
+    <td><img src="https://github.com/user-attachments/assets/72af9db4-feee-4c7e-b9d9-f169cb94b58a" width="200"/></td>
+    <td><img src="https://github.com/user-attachments/assets/9c844418-0b2b-4fcc-b2d2-34ddf24b880a" width="200"/></td>
+    <td><img src="https://github.com/user-attachments/assets/6548d929-0698-4410-a4aa-5ee3e7fd731f" width="200"/></td>
+  </tr>
+  <tr>
+    <td><strong>웹앱</strong></td>
+    <td><img src="https://github.com/user-attachments/assets/f7613e2a-9d52-4e3d-8946-34c8aad4c08e" width="200"/></td>
+    <td><img src="https://github.com/user-attachments/assets/754bcef7-b2ed-44ee-af9a-8c4c2aab9a42" width="200"/></td>
+    <td><img src="https://github.com/user-attachments/assets/838b6364-89a5-4386-85f8-3b1d032d4c65" width="200"/></td>
+  </tr>
+</table>
+
+---
+
+## 🌐 웹앱 링크
+https://qr-attendance-simulator-app.web.app/
+
+---
+
+## 📌 문의 / 피드백
+
+이슈나 개선 요청은 GitHub Issues를 통해 전달해주세요.  
+아이디어 제안, 사용자 경험 피드백 모두 적극 반영하고 있습니다.
+
+---
+
+## 📝 라이선스
+
+본 프로젝트는 MIT License 하에 공개되어 있습니다.
