@@ -1,4 +1,5 @@
-<img src="<!-- 아이콘 이미지 링크 -->" alt="icon" width="400"/>
+<img src="" alt="https://github.com/user-attachments/assets/c7700eac-11a9-4f02-976e-4f0bb3df254c" width="400"/>
+
 
 # 🎓 내일배움캠프 QR 출결 시뮬레이터
 
@@ -52,12 +53,9 @@
 ## 🖼 스크린샷
 
 <table>
-<table>
   <tr>
     <td><strong>웹사이트</strong></td>
-    <td><img src="https://github.com/user-attachments/assets/72af9db4-feee-4c7e-b9d9-f169cb94b58a" width="200"/></td>
-    <td><img src="https://github.com/user-attachments/assets/9c844418-0b2b-4fcc-b2d2-34ddf24b880a" width="200"/></td>
-    <td><img src="https://github.com/user-attachments/assets/6548d929-0698-4410-a4aa-5ee3e7fd731f" width="200"/></td>
+    <td colspan="3"><img src="https://github.com/user-attachments/assets/6548d929-0698-4410-a4aa-5ee3e7fd731f" width="600"/></td>
   </tr>
   <tr>
     <td><strong>웹앱</strong></td>
